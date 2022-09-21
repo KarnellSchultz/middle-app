@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // The country to block from accessing the secret page
-const BLOCKED_COUNTRY = 'US';
+const BLOCKED_COUNTRY = 'SE';
 
 // Trigger this middleware to run on the `/secret-page` route
 export const config = {
@@ -15,9 +15,9 @@ export function middleware(req: NextRequest) {
   // Extract country. Default to US if not found.
   const country = (req.geo && req.geo.country) || 'US';
 
-  // console.log(country);
+  console.log(country);
   
-  // console.log(`Visitor from ${country}`);
+  console.log(`Visitor from ${country}`);
 
   
 
