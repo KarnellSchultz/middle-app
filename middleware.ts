@@ -15,9 +15,9 @@ export function middleware(req: NextRequest) {
   // Extract country. Default to US if not found.
   const country = (req.geo && req.geo.country) || 'US';
 
-  console.log(country);
+  // console.log(country);
   
-  console.log(`Visitor from ${country}`);
+  // console.log(`Visitor from ${country}`);
 
   
 
